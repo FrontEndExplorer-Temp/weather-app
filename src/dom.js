@@ -32,5 +32,5 @@ export function renderHourlyCards(hourlyList) {
     </div>
   `).join("");
 
-  return `<h3>Next 6 Hours</h3><div class="card-container">${cards}</div>`;
+  return `<h3>Upcoming Weather Highlights</h3><div class="card-container">${cards}</div>`;
 }
