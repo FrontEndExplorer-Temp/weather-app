@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Favicon and Manifest Links -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon-96x96.png"
+      sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./assets/site.webmanifest" />
 
-<body>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <header>
-    <h1>Weather App</h1>
-  </header>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
 
-  <main>
-    <section class="weather-form">
-      <form id="location-form">
-        <input
-          type="text"
-          id="location-input"
-          placeholder="Enter city name"
-          required
-        />
-        <button type="submit">Get Weather</button>
-        <button id="get-location-btn">Get Weather for My Location</button>
+    <main>
+      <section class="weather-form">
+        <form id="location-form">
+          <input
+            type="text"
+            id="location-input"
+            placeholder="Enter city name"
+            required />
+          <button type="submit">Get Weather</button>
+          <button id="get-location-btn">Get Weather for My Location</button>
+        </form>
+      </section>
 
-      </form>
-    </section>
+      <div id="loading" class="loading" style="display: none">
+        <p>Loading...</p>
+      </div>
 
-    <div id="loading" class="loading" style="display: none;">
-      <p>Loading...</p>
-    </div>
+      <section id="weather-output" class="weather-output"></section>
 
-    <section id="weather-output" class="weather-output">
-    </section>
+      <section id="hourly-output"></section>
 
-    <section id="hourly-output"></section>
-    
-    <section id="forecast-output"></section>
+      <section id="forecast-output"></section>
+    </main>
 
-  </main>
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
