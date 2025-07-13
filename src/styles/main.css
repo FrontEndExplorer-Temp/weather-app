@@ -1,0 +1,16 @@
+@import url('../style.css'); 
+input[type="text"]:focus, button:focus, .search-history-item:focus {
+  outline: 2px solid #9f7aea;
+  outline-offset: 2px;
+  background: rgba(159, 122, 234, 0.08);
+}
+button, .search-history-item {
+  touch-action: manipulation;
+} 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: linear-gradient(135deg, #232526, #414345);
+    --card-bg: rgba(30,30,30,0.7);
+    --text-color: #e0e0e0;
+  }
+} 

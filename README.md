@@ -1,26 +1,31 @@
-# 🌦️ Weather App
+# Weather App
 
-A simple, responsive Weather Application built using **HTML**, **CSS**, **JavaScript**, and bundled with **Webpack**. It fetches real-time weather data using the **OpenWeatherMap API**.
+## Production Build & Deployment
 
-## 🚀 Features
+1. **Build for production:**
+   ```sh
+   npm run build
+   ```
+   The optimized output will be in the `dist/` folder.
 
-- 🌍 Get current weather for any city
-- 📱 Fully responsive layout (mobile, tablet, desktop)
-- 🌡️ Displays temperature, weather conditions, humidity, and wind speed
-- 🔄 Dynamic updates with API fetch
-- 🎨 Modern UI design with CSS
-- 📦 Modular JavaScript with Webpack
+2. **Analyze bundle:**
+   ```sh
+   npm run analyze
+   ```
+   Generates a static report of bundle size in `dist/`.
 
----
+3. **Deploy:**
+   - Upload the `dist/` folder to your static hosting (Netlify, Vercel, GitHub Pages, etc.)
+   - Ensure your server serves `index.html` for all routes (SPA fallback)
 
+## Code Quality
+- Lint: `npm run lint`
+- Format: `npm run format`
+- All code is modular, ES6+, and follows best practices for accessibility, performance, and maintainability.
 
-## 🛠️ Built With
-
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Webpack](https://webpack.js.org/)
-- [OpenWeatherMap API](https://openweathermap.org/api)
-
----
+## Best Practices
+- Use environment variables for API keys in production.
+- Review bundle size and optimize dependencies.
+- Test accessibility and responsiveness on all devices.
+- Keep dependencies up to date.
 

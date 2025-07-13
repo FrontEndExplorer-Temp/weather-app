@@ -1,0 +1,30 @@
+/* Theme Variables */
+:root {
+  --main-bg: linear-gradient(135deg, #667eea, #764ba2);
+  --card-bg: rgba(255,255,255,0.15);
+  --text-color: #f0f0f5;
+}
+
+body.sunny {
+  --main-bg: linear-gradient(135deg, #f7971e, #ffd200);
+}
+body.rainy {
+  --main-bg: linear-gradient(135deg, #485563, #29323c);
+}
+body.night {
+  --main-bg: linear-gradient(135deg, #232526, #414345);
+}
+body.dark {
+  --main-bg: linear-gradient(135deg, #232526, #414345);
+  --card-bg: rgba(30,30,30,0.7);
+  --text-color: #e0e0e0;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--text-color);
+}
+.weather-card, .forecast-card, .hourly-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+} 
